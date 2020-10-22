@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background: url("../img/Rectangle 5.png")  no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+.navbar a {
+    color: black;
+}
+.navbar__center {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar__right__menu > li a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: all .1s;
+}
+.navbar__right__menu > li a:hover {
+    color: red;
+}
+
+.header__desk p:first-child {
+    font-size: 30px;
+}
+
+.header__desc p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.order-btn {
+    width: 250px;
+}
+
+.header__card-services {
+    -webkit-box-shadow: -2px 6px 6px 0px rgba(0,0,0,0.57);
+    -moz-box-shadow: -2px 6px 6px 0px rgba(0,0,0,0.57);
+    box-shadow: -2px 6px 6px 0px rgba(0,0,0,0.57);
+}
+
+.card-body p:first-child {
+    font-size: 80px;
+    font-weight: 900;
+    color: #EFF5F8;
+    margin: 0;
+}
+
+.card-body h4 {
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 0 50px;
+}
+
+.header__services {
+    margin-top: 170px;
+}
+
+/* FIRST SECTION */
+
+.first-section {
+    background: url("../img/first section.png") no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+}
+
+.first-section h4 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.first-section h5 {
+     font-size: 20px;
+     font-weight: 600;
+     padding: 10px;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+    background-color: #F8F8F8;
+}
+
+.second-section h4 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.second-section p {
+    text-align: center;
+}
+.call-btn {
+    width: 210px;
+}
+
+.second-section__left {
+   width: 50%;
+}
+
+.second-section__right {
+    width: 50%;
+}
+
+.second-section__right input {
+    border: none;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #333333;
+    outline: none;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkbox__label {
+    font-size: 10px;
+}
+
+/* THIRD SECTION  */
+
+.third-section {
+    background-color: white;
+    padding-bottom: 176px;
+}
+
+.third-section p {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 70px 0 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    background-color: #333333;
+    font-size: 13px;
+}
+
+.footer__logo {
+    position: absolute;
+    top: -30px;
+}
+
+.footer__nav {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.footer__nav li {
+    margin-top: 7px;
+}
+.footer__nav a {
+    color: white;
+}
+
+/* CHECKBOX INPUT    */
+#menu__toggle {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .header__desc {
+        text-align: center;
+    }
+    .menu__item {
+        font-size: 23px;
+    }
+    .header__card-services:last-child {
+        width: 100% !important;
+        margin-top: 40px;
+    }
+    .call-btn-second {
+        font-size: 13px;
+    }
+    .first-section h4 {
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }   
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__card-services:first-child {
+        width: 100% !important;
+        margin-bottom: 40px;
+    }
+    .header__card-services:nth-child(2) {
+        width: 100% !important;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;  
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        }
+    .menu__btn > span::before {
+        content: '';
+        top: -13px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 13px;
+    }
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 90%;
+        border-radius: 0 0 10%;
+        margin: 0;
+        padding: 60px 0;
+        list-style-type: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: all .2s;
+       
+    }
+    .menu__item {
+        padding: 12px 24px;
+        color: #333;
+        transition: all .1s;
+    }
+    .menu__item a {
+        text-decoration: none;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+    .menu__btn span {
+        transition: all .2s;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+
+    .header__card-services:first-child {
+        width: 90% !important;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__card-services:nth-child(2) {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__card-services:last-child {
+        width: 90% !important;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section h4 {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+/* #Popup phone */
+
+#popup__toggle {
+    bottom: 50px;
+    right: 125px;
+    position: fixed;
+    z-index: 999;
+}
+
+.circlephone {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border: 2px solid rgba(40, 52, 191, 0.9);
+    width: 130px;
+    height: 130px;
+    bottom: -23px;
+    right: 7px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    opacity: .5;
+    -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -moz-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -ms-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -o-animation: circle-anim 2.4s infinite ease-in-out !important;
+    animation: circle-anim 2.4s infinite ease-in-out !important;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+@keyframes circle-anim {
+    0% {
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+    }
+    30% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .1;
+    }
+}
+
+.circle-fill {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    background-color: rgb(35, 73, 206);
+    width: 90px;
+    height: 90px;
+    bottom: -4px;
+    right: 30px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -moz-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -ms-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -o-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+@keyframes circle-fill-anim {
+    0% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+.img-circle {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    width: 172px;
+    height: 52px;
+    bottom: 14px;
+    right: -70px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    opacity: .7;
+}
+
+.img-circle {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: rgba(40, 52, 191, 0.9);
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.img-circleblock {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    width: 60px;
+    height: 53px;
+    background-image: url(../img/phone.png);
+    /* background-image: url(https://insult.kg/wp-content/uploads/2018/12/io00z1.png); */
+    background-position: center center;
+    position: relative;
+    right: 2px;
+    background-repeat: no-repeat;
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
+.tem {
+    position: relative;
+    left: 79px;
+    bottom: 34px;
+    width: 100px;
+    line-height: 15px;
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 690px) {
+    #popup__toggle {
+        right: 81px;
+    }
+    .circlephone {
+        width: 105px;
+        height: 105px;
+        right: 21px;
+        bottom: -11px;
+    }
+    .img-circle {
+        width: 164px;
+        height: 46px;
+        bottom: 14px;
+        right: -70px;
+        border-radius: 14px;
+        border: 2px solid transparent;
+        opacity: .7;
+    }
+    .img-circleblock {
+        width: 44px;
+        height: 30px;
+        top: 8px;
+    }
+    .tem {
+        left: 55px;
+        bottom: 8px;
+        height: 24px;
+        bottom: 14px;
+    }
+}
+
+/* end of popup phone */
