@@ -117,11 +117,26 @@ h1 {
 }
 
 .second-section__left {
-   width: 50%;
+    width: 50%;
 }
 
 .second-section__right {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.second-section__right div{
+    display: flex;
+    justify-content: center;
+}
+
+.second-section__right button {
+    display: block;
+    margin: 0 auto;
 }
 
 .second-section__right input {
@@ -165,6 +180,7 @@ h1 {
 }
 
 .footer__nav {
+    flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 100px;
 }
